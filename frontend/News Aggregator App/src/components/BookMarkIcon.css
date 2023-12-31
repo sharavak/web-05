@@ -1,0 +1,11 @@
+.bookmark {
+    cursor: pointer;
+}
+
+.bookmark svg {
+    transition: fill 0.3s ease;
+}
+
+.bookmarked path {
+    fill: #021f36;
+}

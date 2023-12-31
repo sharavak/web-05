@@ -1,0 +1,23 @@
+/* Home.css */
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination-page {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+  

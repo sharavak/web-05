@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    height: 75vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(211, 211, 211);
+
+}
+
+.left_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    margin-left: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+}
+
+.left_detail input,
+.left_detail button {
+    padding: 7px 10px;
+    outline: none;
+    border-radius: 5px;
+    /*border: 1px solid black;*/
+    border: none;
+}
+
+.left_detail input:hover {
+    background-color: seashell;
+}
+
+.left_detail input:focus {
+    box-shadow: 1px 0.8px 1px 1px rgb(150, 150, 150);
+}
+
+.left_detail button {
+    background-color: seagreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.left_detail button:hover {
+    scale: 1.03;
+
+}
+
+.signIn {
+
+    color: rgb(194, 108, 108);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin-top: 30px;
+        height: auto;
+    }
+}

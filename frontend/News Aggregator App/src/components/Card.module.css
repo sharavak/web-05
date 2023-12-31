@@ -1,0 +1,90 @@
+.container {
+  padding: 50px 80px;
+  display: flex;
+
+ background-color: rgb(211,211,211);
+  flex-wrap: wrap;
+
+}
+
+.card {
+  padding-bottom: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 30%;
+
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* .card1 {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 30%;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: white;
+} */
+
+.card:hover {
+  scale: 1.04;
+  margin: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.card:hover{
+  transform: translateY(-6px);
+
+}
+
+.img {
+  height: 250px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.detaile {
+  margin-left: 10px;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.src {
+  margin: 10px 0px;
+}
+
+.logout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "index.js",
+            "methods": [
+                "GET",
+                "POST",
+                "DELETE"
+            ],
+            "headers": {
+                "Access-Control-Allow-Origin": "https://gilded-hummingbird-0fb802.netlify.app/",
+                "Access-Control-Allow-Methods": "GET, POST, DELETE",
+                "Access-Control-Allow-Headers": "Content-Type"
+            }
+        },
+        {
+            "src": "/(.*)",
+            "dest": "index.js",
+            "methods": [
+                "OPTIONS"
+            ]
+        }
+    ],
+    "env": {
+        "MONGODB_URI": "mongodb+srv://aayushsharma47163:assassin123@cluster0.srsn89d.mongodb.net/?retryWrites=true&w=majority",
+        "secretOrKey": "secret"
+    },
+    "regions": [
+        "bom1"
+    ]
+}

@@ -1,0 +1,292 @@
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f3faff;
+  box-shadow: 0px 0px 4px #bbd0e2;
+  z-index: 999;
+  padding: 3px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+
+.logo {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-left: 30px;
+
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  margin-left: 40px;
+
+}
+
+#profile {
+  font-weight: bolder;
+  font-size: 20px;
+  /* margin: 10px; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+.navlink {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  margin-right: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.navlink:hover {
+  color: seagreen;
+
+}
+
+
+.input,
+.button {
+  padding: 7px 20px;
+  margin: 3px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 4px #bbd0e2;
+
+}
+
+
+
+.input,
+.button {
+  padding: 7px 20px;
+  margin: 3px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 4px #bbd0e2;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+.button {
+  background-color: seagreen;
+  cursor: pointer;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.button:hover {
+  scale: 1.03;
+}
+
+
+.btn {
+  padding: 6px 13px;
+  border: 1.5px solid seagreen;
+  background: transparent;
+  color: rgb(77, 155, 111);
+  cursor: pointer;
+  /* margin-left: 50px; */
+
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.light-theme {
+  background-color: #f3faff;
+  color: black;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+
+.barger {
+  display: none;
+}
+
+.toggle-button {
+  text-decoration: none;
+  padding: 7px 15px;
+  border: 1.5px solid seagreen;
+  background: transparent;
+  color: seagreen;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.barger {
+  display: none;
+
+}
+
+.rightside {
+  margin-left: 380px;
+}
+
+.buttons {
+  margin-left: 110px;
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .barger {
+    display: block;
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    font-size: 23px;
+  }
+
+  .btn {
+    font-size: 23px;
+  }
+
+  nav {
+
+    flex-direction: column;
+    align-items: start;
+    z-index: 9999;
+
+  }
+
+  .search {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    width: 65%;
+
+  }
+
+  .input {
+    width: 50%;
+  }
+
+  .button {
+    width: 30%;
+  }
+
+  .input,
+  .button {
+    padding: 5px 5px;
+  }
+
+  nav ul {
+    display: none;
+    padding: 55px 0px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 30px;
+  }
+
+  nav ul.active {
+    display: block;
+    z-index: 999;
+  }
+
+  .navlink {
+    font-size: 2rem;
+  }
+
+  .barger {
+    display: block;
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    font-size: 23px;
+
+  }
+
+  .btn {
+    font-size: 23px;
+  }
+
+  nav {
+
+    flex-direction: column;
+    align-items: start;
+    z-index: 9999;
+
+  }
+
+  .search {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    width: 65%;
+
+  }
+
+  .input {
+    width: 50%;
+  }
+
+  .button {
+    width: 30%;
+  }
+
+  .input,
+  .button {
+    padding: 5px 5px;
+  }
+
+  nav ul {
+    display: none;
+    padding: 55px 0px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 30px;
+  }
+
+  nav ul.active {
+    display: block;
+    z-index: 999;
+  }
+
+  .navlink {
+    font-size: 2rem;
+  }
+}

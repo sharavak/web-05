@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.light-theme {
+  --background-color: #f3ebf6;
+  --text-color: #333;
+  --button-background: #111b20;
+  --button-text: #fff;
+}
+/* #1a0d1e; */
+
+.dark-theme {
+  --background-color: black;
+  --text-color: #fff;
+  --button-background: #5f99be;
+  --button-text: #fff;
+  .page {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .cards {
+    background-color: var(--background-color);
+    border: 3px solid var(--text-color);
+  }
+  .navbar {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .navbar .navlink {
+    color: var(--text-color);
+  }
+  .toggle-button {
+    color: var(--text-color);
+    background-color: seagreen;
+  }
+  .btn {
+    color: var(--text-color);
+    background-color: seagreen;
+  }
+
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+}
